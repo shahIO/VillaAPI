@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyVilla_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be5cd3d790763dfdedd7a8d6da153d2f93bd147")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d7f06349fc1f54b94bc0ca5a6f0fa0a245acffb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyVilla_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyVilla_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
