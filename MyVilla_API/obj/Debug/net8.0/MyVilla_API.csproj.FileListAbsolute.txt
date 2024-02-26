@@ -31,3 +31,7 @@ C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\obj\Debug\net8.0\refint\MyVilla_API.d
 C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\obj\Debug\net8.0\MyVilla_API.pdb
 C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\obj\Debug\net8.0\MyVilla_API.genruntimeconfig.cache
 C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\obj\Debug\net8.0\ref\MyVilla_API.dll
+C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\shahm\Code\c#\MyVilla\MyVilla_API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
