@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\controllers\\villaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\controllers\\villaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\dto\\villadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\models\\dto\\villadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\data\\villastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\data\\villastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VillaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaDTO.cs",
-              "RelativeDocumentMoniker": "MyVilla_API\\Models\\DTO\\VillaDTO.cs",
-              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaDTO.cs",
-              "RelativeToolTip": "MyVilla_API\\Models\\DTO\\VillaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T15:09:02.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VillaStore.cs",
-              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Data\\VillaStore.cs",
-              "RelativeDocumentMoniker": "MyVilla_API\\Data\\VillaStore.cs",
-              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Data\\VillaStore.cs",
-              "RelativeToolTip": "MyVilla_API\\Data\\VillaStore.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T15:08:48.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VillaAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaAPIController.cs",
-              "RelativeDocumentMoniker": "MyVilla_API\\Controllers\\VillaAPIController.cs",
-              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaAPIController.cs",
-              "RelativeToolTip": "MyVilla_API\\Controllers\\VillaAPIController.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAawFYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T14:59:34.057Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
