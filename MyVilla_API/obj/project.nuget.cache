@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eltzqw5ZeHhHXuoBa9a/9X/liLs0P0iEwDpQLAjgU/ujJo8CYvLcZADtM33HkxsiUw9DV6LtsvJZp/Nrs5QS4A==",
+  "dgSpecHash": "WFvh9AEUexhAZKW6SKwylP/RiqbEGW/t4AYFWfvjBYMu7uXIibHhsXkAl7rsEeqPlIauwa/Pk/Xfp9CIF+xi2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\MyVilla_API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\shahm\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\shahm\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\shahm\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\shahm\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\shahm\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

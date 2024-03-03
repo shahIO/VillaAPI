@@ -28,7 +28,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "villaDTO",
+        "Name": "createDTO",
         "Type": "MyVilla_API.Models.DTO.VillaCreateDTO",
         "IsRequired": true
       }
@@ -130,7 +130,7 @@
         "IsRequired": true
       },
       {
-        "Name": "villaDTO",
+        "Name": "updateDTO",
         "Type": "MyVilla_API.Models.DTO.VillaUpdateDTO",
         "IsRequired": true
       }
