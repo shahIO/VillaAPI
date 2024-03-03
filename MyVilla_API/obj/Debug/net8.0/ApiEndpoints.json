@@ -29,7 +29,7 @@
     "Parameters": [
       {
         "Name": "villaDTO",
-        "Type": "MyVilla_API.Models.DTO.VillaDTO",
+        "Type": "MyVilla_API.Models.DTO.VillaCreateDTO",
         "IsRequired": true
       }
     ],
@@ -131,7 +131,7 @@
       },
       {
         "Name": "villaDTO",
-        "Type": "MyVilla_API.Models.DTO.VillaDTO",
+        "Type": "MyVilla_API.Models.DTO.VillaUpdateDTO",
         "IsRequired": true
       }
     ],

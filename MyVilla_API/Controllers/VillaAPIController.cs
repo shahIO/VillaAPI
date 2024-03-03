@@ -57,7 +57,7 @@ namespace MyVilla_API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<VillaDTO> CreateVilla([FromBody] VillaDTO villaDTO)
+        public ActionResult<VillaDTO> CreateVilla([FromBody] VillaCreateDTO villaDTO)
         {
             if (_dbContext.Villas.FirstOrDefault(u => u.Name.ToLower() == villaDTO.Name.ToLower()) != null)
             {
@@ -68,16 +68,15 @@ namespace MyVilla_API.Controllers
             {
                 return BadRequest(villaDTO);
             }
-            if (villaDTO.Id>0)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError);
-            }
+            //if (villaDTO.Id>0)
+            //{
+            //    return StatusCode(StatusCodes.Status500InternalServerError);
+            //}
 
             Villa model = new()
             {
                 Amenity = villaDTO.Amenity,
                 Details = villaDTO.Details,
-                Id = villaDTO.Id,
                 ImageUrl = villaDTO.ImageUrl,
                 Name = villaDTO.Name,
                 Occupancy = villaDTO.Occupancy,
@@ -93,14 +92,14 @@ namespace MyVilla_API.Controllers
 
             // To provide the URL of the newly created resource upon its creation.
             // This enables users to directly access the location where the resource has been generated.
-            return CreatedAtRoute("GetVilla", new { id = villaDTO.Id }, villaDTO);
+            return CreatedAtRoute("GetVilla", new { id = model.Id }, model);
         }
 
         [HttpPut("{id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult UpdateVilla(int id, [FromBody]VillaDTO villaDTO)
+        public IActionResult UpdateVilla(int id, [FromBody]VillaUpdateDTO villaDTO)
         {
             if (villaDTO == null || id != villaDTO.Id)
             {
@@ -140,7 +139,7 @@ namespace MyVilla_API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         
-        public IActionResult UpdatePartialVilla(int id, JsonPatchDocument<VillaDTO> patchDTO)
+        public IActionResult UpdatePartialVilla(int id, JsonPatchDocument<VillaUpdateDTO> patchDTO)
         {
             if (patchDTO == null || id == 0)
             {
@@ -149,10 +148,10 @@ namespace MyVilla_API.Controllers
 
             var villa = _dbContext.Villas.AsNoTracking().FirstOrDefault(u => u.Id == id);
 
-            VillaDTO villaDTO = new()
+            VillaUpdateDTO villaDTO = new()
             {
-                Amenity = villa.Amenity,
-                Details = villa.Details,
+                Amenity = villa?.Amenity,
+                Details = villa?.Details,
                 Id = villa.Id,
                 ImageUrl = villa.ImageUrl,
                 Name = villa.Name,
