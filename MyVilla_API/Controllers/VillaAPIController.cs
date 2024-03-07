@@ -63,7 +63,7 @@ namespace MyVilla_API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<VillaDTO>> CreateVilla([FromBody] VillaCreateDTO createDTO)
         {
-            if (createDTO == null)
+            if (createDTO == null || createDTO.Name?.ToLower() == "null")
             {
                 return BadRequest(createDTO);
             }
