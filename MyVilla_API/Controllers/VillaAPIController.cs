@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using MyVilla_API.Data;
 using MyVilla_API.Models;
 using MyVilla_API.Models.DTO;
+using MyVilla_API.Repository.IRepository;
 
 namespace MyVilla_API.Controllers
 {
@@ -14,13 +15,13 @@ namespace MyVilla_API.Controllers
     public class VillaAPIController : ControllerBase
     {
         public ILogger<VillaAPIController> _logger { get; }
-        public ApplicationDbContext _dbContext { get; }
+        public IVillaRepository _dbVilla { get; }
         public IMapper _mapper { get; }
 
-        public VillaAPIController(ILogger<VillaAPIController> logger, ApplicationDbContext dbContext, IMapper mapper)
+        public VillaAPIController(ILogger<VillaAPIController> logger, IVillaRepository dbVilla, IMapper mapper)
         {
             _logger = logger;
-            _dbContext = dbContext;
+            _dbVilla = dbVilla;
             _mapper = mapper;
         }
 
@@ -29,7 +30,7 @@ namespace MyVilla_API.Controllers
         public async Task<ActionResult<IEnumerable<VillaDTO>>> GetVillas()
         {   
             _logger.LogInformation("Getting all villas");
-            IEnumerable<Villa> villaList = await _dbContext.Villas.ToListAsync();
+            IEnumerable<Villa> villaList = await _dbVilla.GetAllAsync();
             return Ok(_mapper.Map<List<VillaDTO>>(villaList));
         }
             
@@ -48,7 +49,7 @@ namespace MyVilla_API.Controllers
                 _logger.LogInformation("Get villa error with id - {id}" + id);
                 return BadRequest();
             }
-            var villa = await _dbContext.Villas.FirstOrDefaultAsync(u => u.Id == id);
+            var villa = await _dbVilla.GetAsync(u => u.Id == id);
             if (villa == null)
             {
                 return NotFound();
@@ -68,7 +69,7 @@ namespace MyVilla_API.Controllers
                 return BadRequest(createDTO);
             }
 
-            var villa = await _dbContext.Villas.FirstOrDefaultAsync(u => u.Name!.ToLower() == createDTO.Name!.ToLower());
+            var villa = await _dbVilla.GetAsync(u => u.Name!.ToLower() == createDTO.Name!.ToLower());
 
             if (villa != null)
             {
@@ -93,8 +94,7 @@ namespace MyVilla_API.Controllers
 
             Villa model = _mapper.Map<Villa>(createDTO);
 
-            await _dbContext.Villas.AddAsync(model);
-            await _dbContext.SaveChangesAsync();
+            await _dbVilla.CreateAsync(model);
 
             //return Ok(villaDTO);
 
@@ -115,7 +115,7 @@ namespace MyVilla_API.Controllers
                 return BadRequest(updateDTO);
             }
 
-            if (await _dbContext.Villas.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id) == null)
+            if (await _dbVilla.GetAsync(u => u.Id == id, tracked: false) == null)
             {
                 return NotFound();
             }
@@ -138,8 +138,7 @@ namespace MyVilla_API.Controllers
 
             Villa model = _mapper.Map<Villa>(updateDTO);
 
-            _dbContext.Villas.Update(model);
-            await _dbContext.SaveChangesAsync();
+            await _dbVilla.UpdateAsync(model);
 
             return NoContent();
 
@@ -156,7 +155,7 @@ namespace MyVilla_API.Controllers
                 return BadRequest();
             }
 
-            var villa = await _dbContext.Villas.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
+            var villa = await _dbVilla.GetAsync(u => u.Id == id, tracked: false);
 
             if (villa == null)
             {
@@ -194,8 +193,7 @@ namespace MyVilla_API.Controllers
 
             Villa model = _mapper.Map<Villa>(villaDTO);
 
-            _dbContext.Villas.Update(model);
-            await _dbContext.SaveChangesAsync();
+            await _dbVilla.UpdateAsync(model);
 
             if(!ModelState.IsValid)
             {
@@ -217,14 +215,13 @@ namespace MyVilla_API.Controllers
                 return BadRequest();
             }
 
-            var villa = await _dbContext.Villas.FirstOrDefaultAsync(u => u.Id == id);
+            var villa = await _dbVilla.GetAsync(u => u.Id == id);
             if (villa == null)
             {
                 return NotFound();
             }
 
-            _dbContext.Villas.Remove(villa);
-            await _dbContext.SaveChangesAsync();
+            _dbVilla.RemoveAsync(villa);
 
             return NoContent();
 

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\dto\\villacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\models\\dto\\villacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\controllers\\villaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\controllers\\villaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\irepository\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\irepository\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VillaCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaCreateDTO.cs",
-              "RelativeDocumentMoniker": "MyVilla_API\\Models\\DTO\\VillaCreateDTO.cs",
-              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaCreateDTO.cs",
-              "RelativeToolTip": "MyVilla_API\\Models\\DTO\\VillaCreateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAYAAAASAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Program.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Program.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Program.cs",
+              "RelativeToolTip": "MyVilla_API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T01:29:19.021Z",
+              "WhenOpened": "2024-03-07T03:05:32.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "VillaAPIController.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaAPIController.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Controllers\\VillaAPIController.cs",
               "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaAPIController.cs",
               "RelativeToolTip": "MyVilla_API\\Controllers\\VillaAPIController.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAIA0wEMAAAAtAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T01:27:18.038Z",
+              "WhenOpened": "2024-03-07T02:54:09.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VillaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\VillaRepository.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Repository\\VillaRepository.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\VillaRepository.cs",
+              "RelativeToolTip": "MyVilla_API\\Repository\\VillaRepository.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAADwvzkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T02:52:51.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IVillaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
+              "RelativeToolTip": "MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T02:48:35.44Z",
               "EditorCaption": ""
             }
           ]
