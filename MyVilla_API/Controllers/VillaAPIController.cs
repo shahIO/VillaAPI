@@ -45,10 +45,10 @@ namespace MyVilla_API.Controllers
         {
             if (id == 0 )
             {
-                _logger.LogInformation("Get villa error with id" + id);
+                _logger.LogInformation("Get villa error with id - {id}" + id);
                 return BadRequest();
             }
-            var villa =await _dbContext.Villas.FirstOrDefaultAsync(u => u.Id == id);
+            var villa = await _dbContext.Villas.FirstOrDefaultAsync(u => u.Id == id);
             if (villa == null)
             {
                 return NotFound();
@@ -63,14 +63,17 @@ namespace MyVilla_API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<VillaDTO>> CreateVilla([FromBody] VillaCreateDTO createDTO)
         {
-            if (await _dbContext.Villas.FirstOrDefaultAsync(u => u.Name.ToLower() == createDTO.Name.ToLower()) != null)
-            {
-                ModelState.AddModelError("Custom Error", "Villa already exists!");
-                return BadRequest(ModelState);
-            }
             if (createDTO == null)
             {
                 return BadRequest(createDTO);
+            }
+
+            var villa = await _dbContext.Villas.FirstOrDefaultAsync(u => u.Name!.ToLower() == createDTO.Name!.ToLower());
+
+            if (villa != null)
+            {
+                ModelState.AddModelError("Custom Error", "Villa already exists!");
+                return BadRequest(ModelState);
             }
             //if (villaDTO.Id>0)
             //{
