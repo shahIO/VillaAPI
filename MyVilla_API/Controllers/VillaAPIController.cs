@@ -6,6 +6,7 @@ using MyVilla_API.Data;
 using MyVilla_API.Models;
 using MyVilla_API.Models.DTO;
 using MyVilla_API.Repository.IRepository;
+using System.Net;
 
 namespace MyVilla_API.Controllers
 {
@@ -14,6 +15,7 @@ namespace MyVilla_API.Controllers
     [ApiController]
     public class VillaAPIController : ControllerBase
     {
+        protected APIResponse _response;
         public ILogger<VillaAPIController> _logger { get; }
         public IVillaRepository _dbVilla { get; }
         public IMapper _mapper { get; }
@@ -23,15 +25,18 @@ namespace MyVilla_API.Controllers
             _logger = logger;
             _dbVilla = dbVilla;
             _mapper = mapper;
+            this._response = new();
         }
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<VillaDTO>>> GetVillas()
+        public async Task<ActionResult<APIResponse>> GetVillas()
         {   
             _logger.LogInformation("Getting all villas");
             IEnumerable<Villa> villaList = await _dbVilla.GetAllAsync();
-            return Ok(_mapper.Map<List<VillaDTO>>(villaList));
+            _response.Result = _mapper.Map<List<VillaDTO>>(villaList);
+            _response.StatusCode = HttpStatusCode.OK;
+            return Ok(_response);
         }
             
         [HttpGet("{id:int}", Name ="GetVilla")]
@@ -42,7 +47,7 @@ namespace MyVilla_API.Controllers
         //[ProducesResponseType(400)]
         //[ProducesResponseType(404)]
 
-        public async Task<ActionResult<VillaDTO>> GetVilla(int id)
+        public async Task<ActionResult<APIResponse>> GetVilla(int id)
         {
             if (id == 0 )
             {
@@ -54,7 +59,9 @@ namespace MyVilla_API.Controllers
             {
                 return NotFound();
             }
-            return Ok(_mapper.Map<VillaDTO>(villa));
+            _response.Result = _mapper.Map<VillaDTO>(villa);
+            _response.StatusCode = HttpStatusCode.OK;
+            return Ok(_response);
         }
 
         [HttpPost]
@@ -62,7 +69,7 @@ namespace MyVilla_API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<VillaDTO>> CreateVilla([FromBody] VillaCreateDTO createDTO)
+        public async Task<ActionResult<APIResponse>> CreateVilla([FromBody] VillaCreateDTO createDTO)
         {
             if (createDTO == null || createDTO.Name?.ToLower() == "null")
             {
@@ -94,14 +101,18 @@ namespace MyVilla_API.Controllers
 
             Villa model = _mapper.Map<Villa>(createDTO);
 
-            await _dbVilla.CreateAsync(model);
+            await _dbVilla.CreateAsync(villa);
 
             //return Ok(villaDTO);
 
 
             // To provide the URL of the newly created resource upon its creation.
             // This enables users to directly access the location where the resource has been generated.
-            return CreatedAtRoute("GetVilla", new { id = model.Id }, model);
+            //return CreatedAtRoute("GetVilla", new { id = model.Id }, model);
+
+            _response.Result = _mapper.Map<VillaDTO>(villa);
+            _response.StatusCode = HttpStatusCode.Created;
+            return CreatedAtRoute("GetVilla", new { id = villa.Id }, _response);
         }
 
         [HttpPut("{id:int}")]
