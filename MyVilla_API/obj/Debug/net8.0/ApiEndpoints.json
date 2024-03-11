@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyVilla_API.Models.DTO.VillaDTO, MyVilla_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "MyVilla_API.Models.APIResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MyVilla_API.Models.DTO.VillaDTO",
+        "Type": "MyVilla_API.Models.APIResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -44,7 +44,7 @@
         "StatusCode": 200
       },
       {
-        "Type": "MyVilla_API.Models.DTO.VillaDTO",
+        "Type": "MyVilla_API.Models.APIResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -88,7 +88,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MyVilla_API.Models.DTO.VillaDTO",
+        "Type": "MyVilla_API.Models.APIResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
