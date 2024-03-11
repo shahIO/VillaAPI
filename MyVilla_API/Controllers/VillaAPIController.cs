@@ -187,7 +187,7 @@ namespace MyVilla_API.Controllers
                     _response.StatusCode = HttpStatusCode.NotFound;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
-                        = new List<string>() { "Villa not found" };
+                        = new List<string>() { "Villa doesnot exist" };
                     return NotFound(_response);
                 }
                 //villa.Name = villaDTO.Name;
