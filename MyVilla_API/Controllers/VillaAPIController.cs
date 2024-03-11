@@ -107,7 +107,7 @@ namespace MyVilla_API.Controllers
                     _response.StatusCode = HttpStatusCode.BadRequest;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
-                        = new List<string>() { "Villa is null" };
+                        = new List<string>() { "Villa cannot be null" };
                     return BadRequest(_response);
                 }
 
