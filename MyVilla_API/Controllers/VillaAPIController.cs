@@ -165,7 +165,7 @@ namespace MyVilla_API.Controllers
         }
 
         [HttpPut("{id:int}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<APIResponse>> UpdateVilla(int id, [FromBody] VillaUpdateDTO updateDTO)
@@ -211,7 +211,7 @@ namespace MyVilla_API.Controllers
 
                 await _dbVilla.UpdateAsync(model);
 
-                _response.StatusCode = HttpStatusCode.NoContent;
+                _response.StatusCode = HttpStatusCode.OK;
                 _response.IsSuccess = true;
                 return Ok(_response);
             }
@@ -285,7 +285,7 @@ namespace MyVilla_API.Controllers
 
 
         [HttpDelete("{id:int}", Name = "DeleteVilla")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<APIResponse>> DeleteVilla(int id)
@@ -307,7 +307,7 @@ namespace MyVilla_API.Controllers
 
                 await _dbVilla.RemoveAsync(villa);
 
-                _response.StatusCode = HttpStatusCode.NoContent;
+                _response.StatusCode = HttpStatusCode.OK;
                 _response.IsSuccess = true;
                 return Ok(_response);
             }
