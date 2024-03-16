@@ -10,18 +10,18 @@ namespace MyVilla_API.Repository
 {
     public class VillaRepository :Repository<Villa>, IVillaRepository
     {
-        public ApplicationDbContext _dbContext { get; }
+        public ApplicationDbContext DbContext { get; }
 
         public VillaRepository(ApplicationDbContext dbContext) : base (dbContext)
         {
-            _dbContext = dbContext;
+            DbContext = dbContext;
         }
 
         public async Task<Villa> UpdateAsync(Villa entity)
         {
             entity.UpdatedDate = DateTime.Now;
-            _dbContext.Villas.Update(entity);
-            await _dbContext.SaveChangesAsync();
+            DbContext.Villas.Update(entity);
+            await DbContext.SaveChangesAsync();
             return entity;
         }
     }
