@@ -177,7 +177,7 @@ namespace MyVilla_API.Controllers
                     _response.StatusCode = HttpStatusCode.BadRequest;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
-                        = new List<string>() { "Update DTO is null or wrong ID" };
+                        = new List<string>() { "Update DTO is null or wrong ID passed!" };
 
                     return BadRequest(_response);
                 }
