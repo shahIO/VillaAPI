@@ -34,7 +34,7 @@ namespace MyVilla_API.Controllers
         {
             try
             {
-                _logger.LogInformation("Getting all villas");
+                _logger.LogInformation("GET - Listing all villas");
                 IEnumerable<Villa> villaList = await _dbVilla.GetAllAsync();
                 _response.Result = _mapper.Map<List<VillaDTO>>(villaList);
                 _response.StatusCode = HttpStatusCode.OK;
