@@ -168,7 +168,7 @@ namespace MyVilla_API.Controllers
                     _response.StatusCode = HttpStatusCode.BadRequest;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
-                        = new List<string>() { "Villa Id is invalid!" };
+                        = new List<string>() { "Villa Id is not present in Villa Table!" };
                     return BadRequest(_response);
                 }
 
