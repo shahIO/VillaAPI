@@ -6,7 +6,9 @@ namespace MyVilla_API.Models.DTO
     {
         [Required]
         public int VillaNo { get; set; }
-        
+        [Required]
+        public int VillaId { get; set; }
+
         public required string SpecialDetails { get; set; }
     }
 }

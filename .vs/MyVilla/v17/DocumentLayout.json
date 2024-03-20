@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Migrations\\20240320153401_AddForeignKeyToVillaTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MyVilla_API\\Migrations\\20240320153401_AddForeignKeyToVillaTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\controllers\\villanumberapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\controllers\\villanumberapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\dto\\villanumberupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\models\\dto\\villanumberupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\dto\\villanumbercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\models\\dto\\villanumbercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\dto\\villanumberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\models\\dto\\villanumberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\irepository\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\irepository\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\villanumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\models\\villa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\villarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\controllers\\villaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\controllers\\villaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\repository\\irepository\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|solutionrelative:myvilla_api\\repository\\irepository\\ivillarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDA42DBC-DA23-426E-8231-C6F909EB12C1}|MyVilla_API\\MyVilla_API.csproj|c:\\users\\shahm\\code\\c#\\myvilla\\myvilla_api\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Villa.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\Villa.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Models\\Villa.cs",
@@ -59,20 +71,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Repository\\Repository.cs",
               "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\Repository.cs",
               "RelativeToolTip": "MyVilla_API\\Repository\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAwAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T15:05:54.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "VillaRepository.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\VillaRepository.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Repository\\VillaRepository.cs",
@@ -85,20 +97,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "IVillaRepository.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
               "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
               "RelativeToolTip": "MyVilla_API\\Repository\\IRepository\\IVillaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswAUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T15:04:31.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "VillaAPIController.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaAPIController.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Controllers\\VillaAPIController.cs",
@@ -111,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "APIResponse.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\APIResponse.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Models\\APIResponse.cs",
@@ -130,25 +142,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240320153401_AddForeignKeyToVillaTable.cs",
-              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Migrations\\20240320153401_AddForeignKeyToVillaTable.cs",
-              "RelativeDocumentMoniker": "MyVilla_API\\Migrations\\20240320153401_AddForeignKeyToVillaTable.cs",
-              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Migrations\\20240320153401_AddForeignKeyToVillaTable.cs",
-              "RelativeToolTip": "MyVilla_API\\Migrations\\20240320153401_AddForeignKeyToVillaTable.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Title": "VillaNumberAPI.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaNumberAPI.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Controllers\\VillaNumberAPI.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Controllers\\VillaNumberAPI.cs",
+              "RelativeToolTip": "MyVilla_API\\Controllers\\VillaNumberAPI.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAADwv28AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T15:34:01.518Z",
+              "WhenOpened": "2024-03-20T15:48:12.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "VillaNumberUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaNumberUpdateDTO.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Models\\DTO\\VillaNumberUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaNumberUpdateDTO.cs",
+              "RelativeToolTip": "MyVilla_API\\Models\\DTO\\VillaNumberUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T15:41:30.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VillaNumberDTO.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaNumberDTO.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Models\\DTO\\VillaNumberDTO.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaNumberDTO.cs",
+              "RelativeToolTip": "MyVilla_API\\Models\\DTO\\VillaNumberDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T15:41:26.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VillaNumberCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaNumberCreateDTO.cs",
+              "RelativeDocumentMoniker": "MyVilla_API\\Models\\DTO\\VillaNumberCreateDTO.cs",
+              "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\DTO\\VillaNumberCreateDTO.cs",
+              "RelativeToolTip": "MyVilla_API\\Models\\DTO\\VillaNumberCreateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T15:40:45.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "VillaNumber.cs",
               "DocumentMoniker": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\VillaNumber.cs",
               "RelativeDocumentMoniker": "MyVilla_API\\Models\\VillaNumber.cs",
               "ToolTip": "C:\\Users\\shahm\\Code\\c#\\MyVilla\\MyVilla_API\\Models\\VillaNumber.cs",
               "RelativeToolTip": "MyVilla_API\\Models\\VillaNumber.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T15:21:22.082Z",
               "EditorCaption": ""

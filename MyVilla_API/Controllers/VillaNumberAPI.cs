@@ -12,16 +12,18 @@ namespace MyVilla_API.Controllers
     public class VillaNumberAPI : ControllerBase
     {
         private readonly IVillaNumberRepository _dbVillaNumber;
+        private readonly IVillaRepository _dbVilla;
         private readonly IMapper _mapper;
         private ILogger<VillaNumberAPI> _logger;
         private APIResponse _response = new APIResponse();
 
-        public VillaNumberAPI( IVillaNumberRepository dbVillaNumber, ILogger<VillaNumberAPI> logger, IMapper mapper)
+        public VillaNumberAPI( IVillaNumberRepository dbVillaNumber, IVillaRepository dbVilla, ILogger<VillaNumberAPI> logger, IMapper mapper)
         {
             _dbVillaNumber = dbVillaNumber;
             _logger = logger;
             _mapper = mapper;
             this._response = new();
+            _dbVilla = dbVilla;
         }
 
         [HttpGet]
@@ -102,6 +104,16 @@ namespace MyVilla_API.Controllers
                     return BadRequest(_response);
                 }
 
+                if(await _dbVilla.GetAsync(u=>u.Id == createDTO.VillaId) == null)
+                {
+                    _response.StatusCode = HttpStatusCode.BadRequest;
+                    _response.IsSuccess = false;
+                    _response.ErrorMessages
+                        = new List<string>() { "Villa Id is invalid" };
+                    return BadRequest(_response);
+                }
+
+
                 var villaNumber_db = await _dbVillaNumber.GetAsync(u => u.VillaNo == createDTO.VillaNo);
 
                 if (villaNumber_db != null)
@@ -148,6 +160,15 @@ namespace MyVilla_API.Controllers
                     _response.ErrorMessages
                         = new List<string>() { "Update is null or wrong ID" };
 
+                    return BadRequest(_response);
+                }
+
+                if (await _dbVilla.GetAsync(u => u.Id == updateDTO.VillaId) == null)
+                {
+                    _response.StatusCode = HttpStatusCode.BadRequest;
+                    _response.IsSuccess = false;
+                    _response.ErrorMessages
+                        = new List<string>() { "Villa Id is invalid!" };
                     return BadRequest(_response);
                 }
 
