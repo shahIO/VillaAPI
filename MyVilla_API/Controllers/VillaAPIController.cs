@@ -58,7 +58,7 @@ namespace MyVilla_API.Controllers
         //[ProducesResponseType(400)]
         //[ProducesResponseType(404)]
 
-        public async Task<ActionResult<APIResponse>> GetVilla(int id)
+        public async Task<ActionResult<APIResponse>> GetVillas(int id)
         {
             try
             {
@@ -74,6 +74,7 @@ namespace MyVilla_API.Controllers
                 var villa = await _dbVilla.GetAsync(u => u.Id == id);
                 if (villa == null)
                 {
+                    _logger.LogInformation("GetVillas() - Null villa passed");
                     _response.StatusCode = HttpStatusCode.NotFound;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
