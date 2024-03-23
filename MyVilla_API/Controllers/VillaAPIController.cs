@@ -105,6 +105,7 @@ namespace MyVilla_API.Controllers
             {
                 if (createDTO == null || createDTO.Name?.ToLower() == "null")
                 {
+                    _logger.LogInformation("CreateVilla() - Null villa passed");
                     _response.StatusCode = HttpStatusCode.BadRequest;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
@@ -116,7 +117,7 @@ namespace MyVilla_API.Controllers
 
                 if (villa_db != null)
                 {
-
+                    _logger.LogInformation("CreateVilla() - Villa already exists");
                     _response.StatusCode = HttpStatusCode.BadRequest;
                     _response.IsSuccess = false;
                     _response.ErrorMessages
